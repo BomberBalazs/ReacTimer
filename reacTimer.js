@@ -57,3 +57,11 @@ document.getElementById('toggleButton').addEventListener('click', function() {
         clearInterval(intervalId);
     }
 });
+
+document.getElementById('song').addEventListener('ended', function() {
+    var button = document.getElementById('toggleButton');
+    var loop = document.getElementById('loop');
+    if (!loop.checked) {
+        button.textContent = 'Start';
+    }
+});
