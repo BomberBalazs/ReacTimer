@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Timer</title>
+</head>
+<body>
+    <label for="minTimeInput">Min Time:</label>
+    <input id="minTimeInput" type="number" value="2">
+    <br>
+    <label for="maxTimeInput">Max Time:</label>
+    <input id="maxTimeInput" type="number" value="6">
+    <br>
+    <label for="timeLeft">Time Left:</label>
+    <input id="timeLeft" type="number" value="0" readonly>
+    <br>
+    <button id="toggleButton" type="button">Start</button>
+    <audio id="song" src="Go.mp3"></audio>
+    <label for="loop">Loop</label>
+    <label class="loop">
+        <input id="loop" type="checkbox">
+        <span class=""></span>
+    </label>
+    <script src="reacTimer.js"></script>
+</body>
+</html>
